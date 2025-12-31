@@ -39,6 +39,15 @@ Wokwi (ESP32 sim) → MQTT publish → Mosquitto (Docker) → Node-RED (Docker) 
 
 This repo expects Mosquitto + Node-RED to be running (see separate repo or local folder: `~/workspace/iot-dev-platform`).
 
+## Demo (Wokwi → MQTT → Node-RED)
+
+![End-to-end demo: Wokwi simulation, MQTT subscriber terminal, Node-RED flow editor, and Dashboard gauges](docs/images/esp32-mqtt-demo.png)
+
+This screenshot shows:
+- Wokwi simulation running in VS Code (ESP32 + DHT22)
+- A terminal `mosquitto_sub` subscriber printing messages from the project topics
+- The Node-RED flow (MQTT-in → payload-to-number → gauges)
+- The Node-RED Dashboard 2.0 page with the two gauges (temperature and humidity)
 ### 2) Node-RED setup
 
 1. Install Dashboard 2.0:
