@@ -1,0 +1,15 @@
+# --- PlatformIO ---
+firmware/.pio/
+firmware/.pioenvs/
+firmware/.piolibdeps/
+
+# VS Code caches (keep extensions.json if you want)
+firmware/.vscode/*
+!firmware/.vscode/extensions.json
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
